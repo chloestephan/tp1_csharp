@@ -22,7 +22,12 @@ namespace tp1
         {
             Console.WriteLine("Which Exercise ?");
             int exercise = Convert.ToInt32(Console.ReadLine());
-
+            
+            while (exercise < 1 || exercise > 5)
+            {
+                Console.WriteLine("Between 1 and 5 !");
+                exercise = Convert.ToInt32(Console.ReadLine());
+            }
             switch (exercise)
             {
                 case 1 : 
